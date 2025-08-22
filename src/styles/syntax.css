@@ -108,21 +108,6 @@
   background: color-mix(in srgb, #66ff66 10%, transparent);
 }
 
-/* Language indicators */
-[data-language]::before {
-  content: attr(data-language);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 2px 8px;
-  font-size: calc(var(--font-size) * 0.8);
-  text-transform: uppercase;
-  color: var(--comment);
-  background: color-mix(in srgb, var(--foreground) 5%, transparent);
-  border-left: 1px solid var(--code-border);
-  border-bottom: 1px solid var(--code-border);
-}
-
 /* Inline code in different contexts */
 .post-content code,
 .page code {
