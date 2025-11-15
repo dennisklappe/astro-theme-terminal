@@ -126,7 +126,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         // Menu trigger functionality
         menus.forEach(menu => {
           const trigger = menu.querySelector(".menu__trigger");
-          const dropdown = menu.querySelector(".menu__dropdown");
+          const dropdown = menu.querySelector<HTMLElement>(".menu__dropdown");
           
           if (trigger && dropdown) {
             trigger.addEventListener("click", event => {
@@ -141,7 +141,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
               }
               
               // Adjust dropdown position if it goes outside container
-              if (dropdown.getBoundingClientRect().right > container.getBoundingClientRect().right) {
+              if (container && dropdown.getBoundingClientRect().right > container.getBoundingClientRect().right) {
                 dropdown.style.left = "auto";
                 dropdown.style.right = "0";
               }

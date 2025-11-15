@@ -9,18 +9,28 @@
     "type": "git",
     "url": "https://github.com/dennisklappe/astro-theme-terminal"
   },
-  "keywords": ["astro", "theme", "terminal", "blog", "monospace", "retro"],
+  "keywords": [
+    "astro",
+    "theme",
+    "terminal",
+    "blog",
+    "monospace",
+    "retro"
+  ],
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "check": "astro check",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.15.4"
+    "astro": "^5.15.7"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.5",
+    "@astrojs/rss": "^4.0.13",
     "@astrojs/sitemap": "^3.6.0",
-    "@astrojs/rss": "^4.0.13"
+    "typescript": "^5.9.3"
   }
 }
